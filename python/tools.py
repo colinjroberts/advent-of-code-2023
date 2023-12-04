@@ -90,11 +90,11 @@ def build_day(day):
     def make_input_files(day):
         # Make empty input files
         with open(f"inputs/{day:02d}.txt", 'w') as f:
-            f.write("\n")
+            f.write("")
         with open(f"inputs/{day:02d}-test1.txt", 'w') as f:
-            f.write("\n")
+            f.write("")
         with open(f"inputs/{day:02d}-test2.txt", 'w') as f:
-            f.write("\n")
+            f.write("")
         
     def make_script_file(day):
         script_template = f'from tools import (get_csv_line_input_as_list, get_line_input_as_list) \n\n\n\
@@ -154,5 +154,5 @@ def p{day:02d}():\n\
     return True
 
 if __name__ == "__main__":
-    build_day(2)
+    build_day(3)
     pass
